@@ -31,24 +31,14 @@ JwtModule.register({
 }),
 MailerModule.forRoot({
   transport: {
-    host: 'smtp.office365.com',
+    host: 'smtp-mail.outlook.com',
     port: 587,
     secure: false,
     auth: {
-      user: '' //ENTER EMAIL HERE,
-      pass: '' //ENTER PASSWORD HERE,
+      user: 'EMAIL HERE' ,
+      pass: 'PASS HERE' ,
     },
   },
-  defaults: {
-    from: '"No Reply "',
-  },
-  template: {
-    dir: join(__dirname, "../views/"),
-       adapter: new HandlebarsAdapter(), 
-       options: {
-         strict: true,
-  },
-}
 }
 )],
   controllers: [AppController],
