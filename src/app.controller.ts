@@ -46,7 +46,7 @@ getRoot(){}
  }
 
  @Post('/verify')
- async Verify(@Body() body: any, @Res() res: Response) {
+ async verify(@Body() body: any, @Res() res: Response) {
   return await this.appService.verify(body.code, res);
  }
 
