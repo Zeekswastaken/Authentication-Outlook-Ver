@@ -20,8 +20,8 @@ services:
       POSTGRES_USER: zeeks
       POSTGRES_PASSWORD: zeee
       POSTGRES_DB: mynestdb
-    volumes:
-      - ./pgdata:/var/lib/postgresql/data
+    # volumes:
+    #   - ./pgdata:/var/lib/postgresql/data
     networks:
       - app-network
 

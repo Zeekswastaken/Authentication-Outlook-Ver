@@ -36,7 +36,7 @@ MailerModule.forRoot({
     secure: false,
     auth: {
       user: 'EMAIL HERE' ,
-      pass: 'PASS HERE' ,
+      pass: 'PASSWORD HERE' ,
     },
   },
 }
